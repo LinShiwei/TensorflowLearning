@@ -15,11 +15,11 @@ You should first have some images for training. You can use your own images or u
 
 The images like the following, should have a black background and a white number.
 
-[image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/introductionImage/imageSample.png)
+![image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/introductionImage/imageSample.png)
 
 ###Step Two
 
-I have writed some Matlab code to convert your images into image data and create label data. These data are in binary format and have '.txt' suffix. Here shows the data format in these data file.
+I have writed some Matlab code to convert your images into image data and create label data. These data are in binary format and have `.txt` suffix. Here shows the data format in these data file.
 
 ![image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/introductionImage/dataFormat.png)
 
