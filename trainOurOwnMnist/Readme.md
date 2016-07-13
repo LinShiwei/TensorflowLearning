@@ -11,7 +11,9 @@ But there are some situations that we want to use our own images for training. I
 ## Method
 ###Step One
 
-You should first have some images for training. The images like the following, should have a black background and a white number.
+You should first have some images for training. You can use your own images or use my images for a try. 
+
+The images like the following, should have a black background and a white number.
 [image]()
 
 ###Step Two
@@ -33,15 +35,16 @@ trainImageLabel.txt.gz
 testImage.txt.gz
 testImageLabel.txt.gz
 ```
-Until now, the training files are ready.
+Until now, the training files are ready.(training files can be find in this repository
 
 ###Step Three
 
 I have done some changes to tensorflow's mnist example code. You can use lswBeginnerMnist.py for simple mnist training or use lswDeepMnist.py for deep mnist training.
-Result of lswBeginnerMnist training , 29 images.
+
+Result of [lswBeginnerMnist.py](https://github.com/LinShiwei/TensorflowLearning/blob/master/trainOurOwnMnist/lswbeginnerMnist.py) training , 29 images.
 
 ![image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/beginnerMnistTrainingResult.png)
 
-Result of lswDeepMnist training , 36 images.
+Result of [lswDeepMnist.py](https://github.com/LinShiwei/TensorflowLearning/blob/master/trainOurOwnMnist/lswDeepMnist.py) training , 36 images.
 
 ![image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/deepMnistTrainingResult.png)
