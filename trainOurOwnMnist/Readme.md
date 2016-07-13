@@ -11,40 +11,42 @@ But there are some situations that we want to use our own images for training. I
 ## Method
 ###Step One
 
-You should first have some images for training. You can use your own images or use my images for a try. 
+You should first have some images for training. You can use your own images or use [my images](https://github.com/LinShiwei/TensorflowLearning/tree/master/trainOurOwnMnist/numberImage) for a try. 
 
 The images like the following, should have a black background and a white number.
-[image]()
+
+[image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/introductionImage/imageSample.png)
 
 ###Step Two
 
 I have writed some Matlab code to convert your images into image data and create label data. These data are in binary format and have '.txt' suffix. Here shows the data format in these data file.
 
-![image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/dataFormat.png)
-After generate these four file:
+![image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/introductionImage/dataFormat.png)
+
+After generating, these four files should like the following:
 ```
 trainImage.txt
 trainImageLabel.txt
 testImage.txt
 testImageLabel.txt
 ```
-You should use gzipCreate.py to convert these files into '.gz' file.
+And then you should use [gzipCreate.py](https://github.com/LinShiwei/TensorflowLearning/blob/master/trainOurOwnMnist/gzipCreate.py) to convert these files into '.gz' files.
 ```
 trainImage.txt.gz
 trainImageLabel.txt.gz
 testImage.txt.gz
 testImageLabel.txt.gz
 ```
-Until now, the training files are ready.(training files can be find in this repository
+Until now, the training files are ready.(training files can be find in this repository)
 
 ###Step Three
 
-I have done some changes to tensorflow's mnist example code. You can use lswBeginnerMnist.py for simple mnist training or use lswDeepMnist.py for deep mnist training.
+I have done some changes to tensorflow's mnist example code. You can use `lswBeginnerMnist.py` for simple mnist training or use `lswDeepMnist.py` for deep mnist training.
 
 Result of [lswBeginnerMnist.py](https://github.com/LinShiwei/TensorflowLearning/blob/master/trainOurOwnMnist/lswbeginnerMnist.py) training , 29 images.
 
-![image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/beginnerMnistTrainingResult.png)
+![image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/introductionImage/beginnerMnistTrainingResult.png)
 
 Result of [lswDeepMnist.py](https://github.com/LinShiwei/TensorflowLearning/blob/master/trainOurOwnMnist/lswDeepMnist.py) training , 36 images.
 
-![image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/deepMnistTrainingResult.png)
+![image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/introductionImage/deepMnistTrainingResult.png)
