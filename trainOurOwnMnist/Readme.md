@@ -16,8 +16,9 @@ You should first have some images for training. The images like the following, s
 
 ###Step Two
 
-I have writed some Matlab code to convert your images into image data and create label data. These data are in binary format and have '.txt' suffix. 
-[image]()
+I have writed some Matlab code to convert your images into image data and create label data. These data are in binary format and have '.txt' suffix. Here shows the data format in these data file.
+
+![image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/dataFormat.png)
 After generate these four file:
 ```
 trainImage.txt
@@ -37,5 +38,10 @@ Until now, the training files are ready.
 ###Step Three
 
 I have done some changes to tensorflow's mnist example code. You can use lswBeginnerMnist.py for simple mnist training or use lswDeepMnist.py for deep mnist training.
-[image]()
-[image]()
+Result of lswBeginnerMnist training , 29 images.
+
+![image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/beginnerMnistTrainingResult.png)
+
+Result of lswDeepMnist training , 36 images.
+
+![image](https://raw.githubusercontent.com/LinShiwei/TensorflowLearning/master/trainOurOwnMnist/deepMnistTrainingResult.png)
